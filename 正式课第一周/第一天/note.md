@@ -27,4 +27,33 @@ git config --global user.email "github的邮箱"
     - git clone自动的让本地仓库和自己的远程仓库，添加了联系；
     - 进入某个文件夹：`cd 文件夹的名称`
     - 返回上一级文件夹：`cd ..`
-    4.
+    4. 当老师讲义更新的时候，学生如果想更新自己的课件：
+        1. 建立学生本地仓库跟老师远程仓库的联系：
+        `git remote add teacher https://github.com/zhufengpeixun/Javascript201616.git`
+        2. 远程更新：`git remote update teacher`
+        3. down到本地：`git pull teacher master`
+
+5. 常用的命令：
+- git是否安装成功 git --version
+- 添加远程仓库 git remote add 通道名称（origin:自己远程 xxxx:别人远程）
+- 查看本地连接了哪些远程 git remote -v
+- 删除远程通道： git remote rm 通道名称
+- 把远程仓库的内容更新到本地：
+    1. git remote add teacher 远程通道地址
+    2. git remote update teacher
+    3. git pull teacher master
+- 把本地仓库内容推送到自己远程仓库
+    1. git add .
+    2. git commit -m"注释"
+    3. git push origin master
+- ls 查看当前文件夹下有哪些子文件；（有的电脑是dir）
+- cd 文件夹名:进入某个文件夹
+- 创建一个文件夹：mkdir 文件夹名字
+- 创建多个文件：touch app.js index.html
+- 进入文件夹并创建文件可以合并：cd leilei && touch app.js index.html;
+- 返回上一次 cd ..
+- 返回根目录 cd/
+- git配置：
+    `git config --global user.name "github的用户名"`
+    `git config --global user.email "github的邮箱"`
+- 思考：删除文件夹的命令   删除文件的命令
