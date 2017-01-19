@@ -92,7 +92,7 @@ b();
         })(num)
     };
     var fn = obj.fn;
-    fn(); obj.fn(); console.log(window.num, obj.num);//60 60
+    fn(); obj.fn(); console.log(window.num, obj.num);
 
 3.关于this和||的运用；
 var name='珠峰';
